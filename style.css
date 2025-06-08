@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'JetBrains Mono', monospace;
+  background-color: #000;
+  color: #fff;
 }
 
+/* Typing cursor animation */
 .typing::after {
   content: '|';
   animation: blink 0.7s infinite;
-  color: #22c55e; /* Tailwind green-500 */
+  color: #fff;
 }
 
 @keyframes blink {
@@ -15,20 +20,27 @@ body {
   50% { opacity: 0; }
 }
 
+/* Project cards */
 .project-card {
-  background-color: #1f2937; /* Tailwind slate-800 */
+  background-color: #111111;
   padding: 1.5rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   text-decoration: none;
   color: inherit;
+  border: 1px solid #333;
 }
 
 .project-card:hover {
-  background-color: #22c55e; /* green-500 */
-  color: #000;
+  background-color: #222222;
+  color: #ddd;
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.6);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+nav {
+  background-color: rgba(0,0,0,0.95);
+  backdrop-filter: blur(8px);
 }
