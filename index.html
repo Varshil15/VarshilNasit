@@ -124,8 +124,9 @@
     </div>
   </section>
 
-  <footer class="text-center text-gray-500 text-sm p-6 select-none">
-    © 2025 Varshil — Writing Code. Learning to Hack. Exploring Tech.
+  <footer class="text-center text-gray-500 text-sm p-6 select-none mt-8 md:mt-0">
+    © 2025 Varshil — Writing Code. Learning to Hack. Exploring Tech.<br>
+    <span class="block text-yellow-400 mt-2">This website is a work in progress. Some features and content are still being updated.</span>
   </footer>
 
   <!-- AOS JS -->
@@ -143,6 +144,68 @@
       });
     }
   </script>
+
+  <style>
+    @media (max-width: 640px) {
+      .max-w-3xl, .max-w-4xl, .max-w-5xl {
+        max-width: 100vw !important;
+      }
+      .px-6 {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+      }
+      .py-16 {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+      }
+      .mb-6, .mb-10, .mb-4 {
+        margin-bottom: 1rem !important;
+      }
+      .mt-8 {
+        margin-top: 1.5rem !important;
+      }
+      .w-36, .h-36 {
+        width: 5.5rem !important;
+        height: 5.5rem !important;
+      }
+      .text-6xl {
+        font-size: 2.25rem !important;
+      }
+      .text-4xl {
+        font-size: 1.5rem !important;
+      }
+      .text-2xl {
+        font-size: 1.125rem !important;
+      }
+      .text-lg {
+        font-size: 1rem !important;
+      }
+      .gap-8 {
+        gap: 1rem !important;
+      }
+      .grid-cols-1, .md\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+      }
+      .flex-col, .md\:flex-row {
+        flex-direction: column !important;
+      }
+      .items-center, .md\:items-center {
+        align-items: flex-start !important;
+      }
+      .justify-between, .md\:justify-between {
+        justify-content: flex-start !important;
+      }
+      .rounded-lg {
+        border-radius: 0.5rem !important;
+      }
+      .shadow-lg {
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15) !important;
+      }
+      .project-card {
+        padding: 1rem !important;
+      }
+    }
+  </style>
 
 </body>
 </html>
