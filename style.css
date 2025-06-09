@@ -64,6 +64,44 @@ nav {
   transform: translateY(0) scale(1) !important;
 }
 
+/* Loader styles */
+.loader-overlay {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #18181b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.4s;
+}
+.loader-center {
+  text-align: center;
+}
+.loader-spinner {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border: 4px solid #38bdf8;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1.5rem;
+}
+.loader-text {
+  display: block;
+  color: #fff;
+  font-size: 1.25rem;
+  letter-spacing: 0.1em;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (max-width: 640px) {
   .max-w-3xl, .max-w-4xl, .max-w-5xl {
     max-width: 100vw !important;
