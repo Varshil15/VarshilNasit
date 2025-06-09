@@ -62,29 +62,6 @@ window.addEventListener("load", () => {
   }
 });
 
-// Smooth scroll and re-trigger AOS animation when navigating with navbar
-const navLinks = document.querySelectorAll('nav a[href^="#"]');
-navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').slice(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' });
-      // Re-trigger AOS animation for all children with data-aos
-      setTimeout(() => {
-        const aosElements = targetSection.querySelectorAll('[data-aos]');
-        aosElements.forEach(el => {
-          el.classList.remove('aos-animate');
-          // Force reflow
-          void el.offsetWidth;
-          el.classList.add('aos-animate');
-        });
-      }, 500); // Wait for scroll to finish
-    }
-  });
-});
-
 // Magic disappear animation for hero section when scrolling away
 let lastHeroVisible = true;
 if (heroSection) {
