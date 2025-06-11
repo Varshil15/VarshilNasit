@@ -112,6 +112,10 @@ nav {
   --color-card-light: #fff;
   --color-link: #38bdf8;
   --color-link-hover: #0ea5e9;
+  --color-accent: #38bdf8;
+  --color-accent-light: #0ea5e9;
+  --color-nav-light: #0ea5e9;
+  --color-project-light: #e0e7ef;
 }
 body, html {
   background: var(--color-bg);
@@ -184,6 +188,24 @@ body.light .loader-spinner, html.light .loader-spinner {
 }
 body.light .loader-text, html.light .loader-text {
   color: #18181b;
+}
+
+/* VN. nav brand color */
+nav .nav-brand {
+  color: var(--color-accent);
+  transition: color 0.3s;
+}
+body.light nav .nav-brand, html.light nav .nav-brand {
+  color: var(--color-nav-light) !important;
+}
+
+/* Project card background for light mode */
+.project-card {
+  background: var(--color-card);
+  transition: background 0.3s;
+}
+body.light .project-card, html.light .project-card {
+  background: var(--color-project-light) !important;
 }
 
 @media (max-width: 640px) {
