@@ -35,5 +35,15 @@ document.addEventListener('DOMContentLoaded', function () {
     const current = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
     localStorage.setItem('theme', current);
     setTheme(current);
+    // Add wobble animation on click
+    themeToggle.classList.remove('wobble'); // reset if already animating
+    void themeToggle.offsetWidth; // force reflow
+    themeToggle.classList.add('wobble');
+  });
+  // Remove wobble class after animation ends so it can be re-triggered
+  themeToggle.addEventListener('animationend', function(e) {
+    if (e.animationName === 'wobble') {
+      themeToggle.classList.remove('wobble');
+    }
   });
 });
