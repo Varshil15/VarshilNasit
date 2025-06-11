@@ -32,7 +32,7 @@ body, html {
   background-color: #111111;
   padding: 1.5rem;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1), z-index 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
   cursor: pointer;
   text-decoration: none;
@@ -43,8 +43,12 @@ body, html {
 .project-card:hover {
   background-color: #222222;
   color: #ddd;
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+  transform: scale(1.12) translateY(-12px) translateX(0) !important;
+  box-shadow: 0 16px 40px 0 rgba(56,189,248,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+  z-index: 10;
+  position: relative;
+  left: 50%;
+  transform: scale(1.12) translateY(-12px) translateX(-50%) !important;
 }
 
 /* Zoom-in hover effect for links and interactive elements */
@@ -321,5 +325,12 @@ body.light .project-card, html.light .project-card {
   }
   nav ul, nav button, nav a:not(.text-2xl) {
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card:hover {
+    left: 0;
+    transform: scale(1.06) translateY(-6px) translateX(0) !important;
   }
 }
