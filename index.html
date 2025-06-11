@@ -44,6 +44,9 @@
   <nav class="fixed top-0 left-0 right-0 z-50 shadow-md bg-[#18181b]">
     <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
       <span class="text-2xl font-extrabold text-white select-none">VN.</span>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode" class="ml-4 p-2 rounded focus:outline-none bg-gray-700 hover:bg-gray-600 transition text-white">
+        <span id="theme-toggle-icon" class="inline-block align-middle">🌙</span>
+      </button>
     </div>
   </nav>
 
@@ -143,12 +146,39 @@
         new SmoothScroll('a[href*="#"]', {
           speed: 600,
           speedAsDuration: true,
-          // Add this to force smooth behavior in all browsers
           easing: 'easeInOutCubic',
           updateURL: false,
           offset: 0
         });
       }
+    });
+
+    // Theme switcher
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-toggle-icon');
+    const root = document.documentElement;
+    // Set default theme to dark
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'dark');
+    }
+    function setTheme(mode) {
+      if (mode === 'light') {
+        root.classList.remove('dark');
+        document.body.classList.remove('dark');
+        themeIcon.textContent = '☀️';
+        themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+      } else {
+        root.classList.add('dark');
+        document.body.classList.add('dark');
+        themeIcon.textContent = '🌙';
+        themeToggle.setAttribute('aria-label', 'Switch to light mode');
+      }
+    }
+    setTheme(localStorage.getItem('theme'));
+    themeToggle.addEventListener('click', function() {
+      const current = localStorage.getItem('theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', current);
+      setTheme(current);
     });
   </script>
 
