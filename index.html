@@ -136,6 +136,21 @@
   <script src="smooth-scroll.js"></script>
   <script src="scroll-animate.js"></script>
   <script src="loader.js"></script>
+  <script>
+    // Initialize Smooth Scroll for all anchor links with hashes (improves Firefox compatibility)
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof SmoothScroll !== 'undefined') {
+        new SmoothScroll('a[href*="#"]', {
+          speed: 600,
+          speedAsDuration: true,
+          // Add this to force smooth behavior in all browsers
+          easing: 'easeInOutCubic',
+          updateURL: false,
+          offset: 0
+        });
+      }
+    });
+  </script>
 
   <!-- Mobile nav toggle (for future use, currently not visible) -->
   <script>
