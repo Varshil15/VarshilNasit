@@ -49,6 +49,43 @@ body, html {
   position: relative;
   left: 50%;
   transform: scale(1.12) translateY(-12px) translateX(-50%) !important;
+  animation: cardZoomCenter 0.45s cubic-bezier(.4,0,.2,1);
+}
+@keyframes cardZoomCenter {
+  0% {
+    transform: scale(1) translateY(0) translateX(0);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+    z-index: 1;
+  }
+  60% {
+    transform: scale(1.15) translateY(-18px) translateX(-50%);
+    box-shadow: 0 24px 60px 0 rgba(56,189,248,0.22), 0 2px 8px 0 rgba(0,0,0,0.10);
+    z-index: 10;
+  }
+  100% {
+    transform: scale(1.12) translateY(-12px) translateX(-50%);
+    box-shadow: 0 16px 40px 0 rgba(56,189,248,0.18), 0 2px 8px 0 rgba(0,0,0,0.10);
+    z-index: 10;
+  }
+}
+@media (max-width: 768px) {
+  .project-card:hover {
+    left: 0;
+    transform: scale(1.06) translateY(-6px) translateX(0) !important;
+    animation: cardZoomMobile 0.35s cubic-bezier(.4,0,.2,1);
+  }
+  @keyframes cardZoomMobile {
+    0% {
+      transform: scale(1) translateY(0) translateX(0);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      z-index: 1;
+    }
+    100% {
+      transform: scale(1.06) translateY(-6px) translateX(0);
+      box-shadow: 0 8px 20px 0 rgba(56,189,248,0.10), 0 2px 8px 0 rgba(0,0,0,0.10);
+      z-index: 10;
+    }
+  }
 }
 
 /* Zoom-in hover effect for links and interactive elements */
@@ -332,5 +369,18 @@ body.light .project-card, html.light .project-card {
   .project-card:hover {
     left: 0;
     transform: scale(1.06) translateY(-6px) translateX(0) !important;
+    animation: cardZoomMobile 0.35s cubic-bezier(.4,0,.2,1);
+  }
+  @keyframes cardZoomMobile {
+    0% {
+      transform: scale(1) translateY(0) translateX(0);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+      z-index: 1;
+    }
+    100% {
+      transform: scale(1.06) translateY(-6px) translateX(0);
+      box-shadow: 0 8px 20px 0 rgba(56,189,248,0.10), 0 2px 8px 0 rgba(0,0,0,0.10);
+      z-index: 10;
+    }
   }
 }
