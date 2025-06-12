@@ -1,26 +1,52 @@
 // Text typing effect for the subtitle
-const text = "Writing Code. Learning to Hack. Exploring Tech.\nCreating. Cracking. Continuously Improving.";
+const texts = [
+  "Writing Code. Learning to Hack. Exploring Tech.",
+  "Creating. Cracking. Continuously Improving."
+];
 const typingText = document.getElementById("typing-text");
+let currentTextIndex = 0;
 let index = 0;
+let isTyping = true;
 let typingTimeout;
 
 function type() {
-  if (index < text.length) {
-    const char = text.charAt(index);
-    if (char === '\n') {
-      typingText.innerHTML += '<br>';
+  const currentText = texts[currentTextIndex];
+  
+  if (isTyping) {
+    // Typing phase
+    if (index < currentText.length) {
+      typingText.innerHTML += currentText.charAt(index);
+      index++;
+      typingTimeout = setTimeout(type, 80);
     } else {
-      typingText.innerHTML += char;
+      // Pause before erasing
+      typingTimeout = setTimeout(() => {
+        isTyping = false;
+        type();
+      }, 2000);
     }
-    index++;
-    typingTimeout = setTimeout(type, 80);
+  } else {
+    // Erasing phase
+    if (index > 0) {
+      typingText.innerHTML = currentText.substring(0, index - 1);
+      index--;
+      typingTimeout = setTimeout(type, 40);
+    } else {
+      // Move to next text
+      currentTextIndex = (currentTextIndex + 1) % texts.length;
+      isTyping = true;
+      // Pause before typing next text
+      typingTimeout = setTimeout(type, 500);
+    }
   }
 }
 
 function startTypingEffect() {
   clearTimeout(typingTimeout);
   typingText.innerHTML = "";
+  currentTextIndex = 0;
   index = 0;
+  isTyping = true;
   type();
 }
 
