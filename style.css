@@ -392,16 +392,16 @@ body.light .project-card:hover .project-logo, html.light .project-card:hover .pr
   border: 3px solid transparent;
   background: linear-gradient(#000, #000) padding-box,
               linear-gradient(45deg, 
-                rgba(56, 189, 248, 0.8), 
-                rgba(14, 165, 233, 1), 
-                rgba(56, 189, 248, 0.4),
-                rgba(14, 165, 233, 0.9),
-                rgba(56, 189, 248, 0.8)
+                rgba(156, 163, 175, 0.8), 
+                rgba(107, 114, 128, 1), 
+                rgba(156, 163, 175, 0.4),
+                rgba(107, 114, 128, 0.9),
+                rgba(156, 163, 175, 0.8)
               ) border-box;
   animation: liquidGlassBorder 4s ease-in-out infinite;
   box-shadow: 
-    0 0 20px rgba(56, 189, 248, 0.3),
-    inset 0 0 20px rgba(56, 189, 248, 0.1);
+    0 0 20px rgba(156, 163, 175, 0.3),
+    inset 0 0 20px rgba(156, 163, 175, 0.1);
   backdrop-filter: blur(1px);
 }
 
@@ -409,67 +409,67 @@ body.light .project-card:hover .project-logo, html.light .project-card:hover .pr
   0% {
     background: linear-gradient(#000, #000) padding-box,
                 linear-gradient(0deg, 
-                  rgba(56, 189, 248, 0.8), 
-                  rgba(14, 165, 233, 1), 
-                  rgba(56, 189, 248, 0.4),
-                  rgba(14, 165, 233, 0.9),
-                  rgba(56, 189, 248, 0.8)
+                  rgba(156, 163, 175, 0.8), 
+                  rgba(107, 114, 128, 1), 
+                  rgba(156, 163, 175, 0.4),
+                  rgba(107, 114, 128, 0.9),
+                  rgba(156, 163, 175, 0.8)
                 ) border-box;
     box-shadow: 
-      0 0 20px rgba(56, 189, 248, 0.3),
-      inset 0 0 20px rgba(56, 189, 248, 0.1);
+      0 0 20px rgba(156, 163, 175, 0.3),
+      inset 0 0 20px rgba(156, 163, 175, 0.1);
   }
   25% {
     background: linear-gradient(#000, #000) padding-box,
                 linear-gradient(90deg, 
-                  rgba(14, 165, 233, 1), 
-                  rgba(56, 189, 248, 0.6),
-                  rgba(14, 165, 233, 0.8),
-                  rgba(56, 189, 248, 1),
-                  rgba(14, 165, 233, 0.7)
+                  rgba(107, 114, 128, 1), 
+                  rgba(156, 163, 175, 0.6),
+                  rgba(107, 114, 128, 0.8),
+                  rgba(156, 163, 175, 1),
+                  rgba(107, 114, 128, 0.7)
                 ) border-box;
     box-shadow: 
-      0 0 30px rgba(14, 165, 233, 0.4),
-      inset 0 0 25px rgba(14, 165, 233, 0.15);
+      0 0 30px rgba(107, 114, 128, 0.4),
+      inset 0 0 25px rgba(107, 114, 128, 0.15);
   }
   50% {
     background: linear-gradient(#000, #000) padding-box,
                 linear-gradient(180deg, 
-                  rgba(56, 189, 248, 0.9), 
-                  rgba(14, 165, 233, 0.7),
-                  rgba(56, 189, 248, 1),
-                  rgba(14, 165, 233, 0.5),
-                  rgba(56, 189, 248, 0.8)
+                  rgba(156, 163, 175, 0.9), 
+                  rgba(107, 114, 128, 0.7),
+                  rgba(156, 163, 175, 1),
+                  rgba(107, 114, 128, 0.5),
+                  rgba(156, 163, 175, 0.8)
                 ) border-box;
     box-shadow: 
-      0 0 25px rgba(56, 189, 248, 0.5),
-      inset 0 0 30px rgba(56, 189, 248, 0.2);
+      0 0 25px rgba(156, 163, 175, 0.5),
+      inset 0 0 30px rgba(156, 163, 175, 0.2);
   }
   75% {
     background: linear-gradient(#000, #000) padding-box,
                 linear-gradient(270deg, 
-                  rgba(14, 165, 233, 0.8), 
-                  rgba(56, 189, 248, 1),
-                  rgba(14, 165, 233, 0.6),
-                  rgba(56, 189, 248, 0.9),
-                  rgba(14, 165, 233, 1)
+                  rgba(107, 114, 128, 0.8), 
+                  rgba(156, 163, 175, 1),
+                  rgba(107, 114, 128, 0.6),
+                  rgba(156, 163, 175, 0.9),
+                  rgba(107, 114, 128, 1)
                 ) border-box;
     box-shadow: 
-      0 0 35px rgba(14, 165, 233, 0.4),
-      inset 0 0 20px rgba(14, 165, 233, 0.12);
+      0 0 35px rgba(107, 114, 128, 0.4),
+      inset 0 0 20px rgba(107, 114, 128, 0.12);
   }
   100% {
     background: linear-gradient(#000, #000) padding-box,
                 linear-gradient(360deg, 
-                  rgba(56, 189, 248, 0.8), 
-                  rgba(14, 165, 233, 1), 
-                  rgba(56, 189, 248, 0.4),
-                  rgba(14, 165, 233, 0.9),
-                  rgba(56, 189, 248, 0.8)
+                  rgba(156, 163, 175, 0.8), 
+                  rgba(107, 114, 128, 1), 
+                  rgba(156, 163, 175, 0.4),
+                  rgba(107, 114, 128, 0.9),
+                  rgba(156, 163, 175, 0.8)
                 ) border-box;
     box-shadow: 
-      0 0 20px rgba(56, 189, 248, 0.3),
-      inset 0 0 20px rgba(56, 189, 248, 0.1);
+      0 0 20px rgba(156, 163, 175, 0.3),
+      inset 0 0 20px rgba(156, 163, 175, 0.1);
   }
 }
 
@@ -477,83 +477,83 @@ body.light .project-card:hover .project-logo, html.light .project-card:hover .pr
 body.light #hero img, html.light #hero img {
   background: linear-gradient(#f8fafc, #f8fafc) padding-box,
               linear-gradient(45deg, 
-                rgba(14, 165, 233, 0.9), 
-                rgba(2, 132, 199, 1), 
-                rgba(14, 165, 233, 0.6),
-                rgba(2, 132, 199, 0.8),
-                rgba(14, 165, 233, 0.9)
+                rgba(107, 114, 128, 0.9), 
+                rgba(75, 85, 99, 1), 
+                rgba(107, 114, 128, 0.6),
+                rgba(75, 85, 99, 0.8),
+                rgba(107, 114, 128, 0.9)
               ) border-box;
   animation: liquidGlassBorderLight 4s ease-in-out infinite;
   box-shadow: 
-    0 0 20px rgba(14, 165, 233, 0.3),
-    inset 0 0 20px rgba(14, 165, 233, 0.1);
+    0 0 20px rgba(107, 114, 128, 0.3),
+    inset 0 0 20px rgba(107, 114, 128, 0.1);
 }
 
 @keyframes liquidGlassBorderLight {
   0% {
     background: linear-gradient(#f8fafc, #f8fafc) padding-box,
                 linear-gradient(0deg, 
-                  rgba(14, 165, 233, 0.9), 
-                  rgba(2, 132, 199, 1), 
-                  rgba(14, 165, 233, 0.6),
-                  rgba(2, 132, 199, 0.8),
-                  rgba(14, 165, 233, 0.9)
+                  rgba(107, 114, 128, 0.9), 
+                  rgba(75, 85, 99, 1), 
+                  rgba(107, 114, 128, 0.6),
+                  rgba(75, 85, 99, 0.8),
+                  rgba(107, 114, 128, 0.9)
                 ) border-box;
     box-shadow: 
-      0 0 20px rgba(14, 165, 233, 0.3),
-      inset 0 0 20px rgba(14, 165, 233, 0.1);
+      0 0 20px rgba(107, 114, 128, 0.3),
+      inset 0 0 20px rgba(107, 114, 128, 0.1);
   }
   25% {
     background: linear-gradient(#f8fafc, #f8fafc) padding-box,
                 linear-gradient(90deg, 
-                  rgba(2, 132, 199, 1), 
-                  rgba(14, 165, 233, 0.7),
-                  rgba(2, 132, 199, 0.9),
-                  rgba(14, 165, 233, 1),
-                  rgba(2, 132, 199, 0.8)
+                  rgba(75, 85, 99, 1), 
+                  rgba(107, 114, 128, 0.7),
+                  rgba(75, 85, 99, 0.9),
+                  rgba(107, 114, 128, 1),
+                  rgba(75, 85, 99, 0.8)
                 ) border-box;
     box-shadow: 
-      0 0 30px rgba(2, 132, 199, 0.4),
-      inset 0 0 25px rgba(2, 132, 199, 0.15);
+      0 0 30px rgba(75, 85, 99, 0.4),
+      inset 0 0 25px rgba(75, 85, 99, 0.15);
   }
   50% {
     background: linear-gradient(#f8fafc, #f8fafc) padding-box,
                 linear-gradient(180deg, 
-                  rgba(14, 165, 233, 1), 
-                  rgba(2, 132, 199, 0.8),
-                  rgba(14, 165, 233, 0.9),
-                  rgba(2, 132, 199, 0.7),
-                  rgba(14, 165, 233, 0.9)
+                  rgba(107, 114, 128, 1), 
+                  rgba(75, 85, 99, 0.8),
+                  rgba(107, 114, 128, 0.9),
+                  rgba(75, 85, 99, 0.7),
+                  rgba(107, 114, 128, 0.9)
                 ) border-box;
     box-shadow: 
-      0 0 25px rgba(14, 165, 233, 0.5),
-      inset 0 0 30px rgba(14, 165, 233, 0.2);
+      0 0 25px rgba(107, 114, 128, 0.5),
+      inset 0 0 30px rgba(107, 114, 128, 0.2);
   }
   75% {
     background: linear-gradient(#f8fafc, #f8fafc) padding-box,
                 linear-gradient(270deg, 
-                  rgba(2, 132, 199, 0.9), 
-                  rgba(14, 165, 233, 1),
-                  rgba(2, 132, 199, 0.7),
-                  rgba(14, 165, 233, 0.8),
-                  rgba(2, 132, 199, 1)
+                  rgba(75, 85, 99, 0.9), 
+                  rgba(107, 114, 128, 1),
+                  rgba(75, 85, 99, 0.7),
+                  rgba(107, 114, 128, 0.8),
+                  rgba(75, 85, 99, 1)
                 ) border-box;
     box-shadow: 
-      0 0 35px rgba(2, 132, 199, 0.4),
-      inset 0 0 20px rgba(2, 132, 199, 0.12);
+      0 0 35px rgba(75, 85, 99, 0.4),
+      inset 0 0 20px rgba(75, 85, 99, 0.12);
   }
   100% {
     background: linear-gradient(#f8fafc, #f8fafc) padding-box,
                 linear-gradient(360deg, 
-                  rgba(14, 165, 233, 0.9), 
-                  rgba(2, 132, 199, 1), 
-                  rgba(14, 165, 233, 0.6),
-                  rgba(2, 132, 199, 0.8),
-                  rgba(14, 165, 233, 0.9)
+                  rgba(107, 114, 128, 0.9), 
+                  rgba(75, 85, 99, 1), 
+                  rgba(107, 114, 128, 0.6),
+                  rgba(75, 85, 99, 0.8),
+                  rgba(107, 114, 128, 0.9)
                 ) border-box;
     box-shadow: 
-      0 0 20px rgba(14, 165, 233, 0.3),
-      inset 0 0 20px rgba(14, 165, 233, 0.1);
+      0 0 20px rgba(107, 114, 128, 0.3),
+      inset 0 0 20px rgba(107, 114, 128, 0.1);
   }
 }
 
