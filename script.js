@@ -1,12 +1,17 @@
 // Text typing effect for the subtitle
-const text = "Writing Code. Learning to Hack. Exploring Tech.";
+const text = "Writing Code. Learning to Hack. Exploring Tech.\nCreating. Cracking. Continuously Improving.";
 const typingText = document.getElementById("typing-text");
 let index = 0;
 let typingTimeout;
 
 function type() {
   if (index < text.length) {
-    typingText.textContent += text.charAt(index);
+    const char = text.charAt(index);
+    if (char === '\n') {
+      typingText.innerHTML += '<br>';
+    } else {
+      typingText.innerHTML += char;
+    }
     index++;
     typingTimeout = setTimeout(type, 80);
   }
@@ -14,7 +19,7 @@ function type() {
 
 function startTypingEffect() {
   clearTimeout(typingTimeout);
-  typingText.textContent = "";
+  typingText.innerHTML = "";
   index = 0;
   type();
 }
