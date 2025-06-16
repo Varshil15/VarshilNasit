@@ -773,3 +773,6 @@ footer {
     justify-content: center;
   }
 }
+body.light .hero-typing, html.light .hero-typing {
+  color: #18181b !important;
+}
