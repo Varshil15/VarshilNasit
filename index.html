@@ -21,7 +21,7 @@
 
   <!-- <link rel="icon" href="V.__8_-removebg-preview.png" type="image/x-icon" /> -->
   <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   <!-- Google Font JetBrains Mono & Sora -->
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -41,111 +41,105 @@
   </div>
 
   <!-- NAVIGATION -->
-  <nav class="fixed top-0 left-0 w-full flex items-center justify-between px-8 py-2 z-50 border-b border-gray-700/30 shadow-xl backdrop-blur-lg bg-transparent rounded-b-2xl">
-    <span class="text-2xl font-extrabold select-none nav-brand">VN.</span>
-    <button id="theme-toggle" aria-label="Toggle dark/light mode" class="ml-4 p-2 rounded focus:outline-none bg-gray-700 hover:bg-gray-600 transition text-white">
-      <span id="theme-toggle-icon" class="inline-block align-middle">🌙</span>
+  <nav class="nav-main">
+    <span class="nav-brand">VN.</span>
+    <button id="theme-toggle" aria-label="Toggle dark/light mode" class="theme-toggle-btn">
+      <span id="theme-toggle-icon" class="theme-toggle-icon">🌙</span>
     </button>
   </nav>
 
-
-
-
   <!-- HERO -->
-  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center pt-20 px-6 max-w-3xl mx-auto">
+  <section id="hero" class="hero-section">
     <img
       src="https://avatars.githubusercontent.com/u/191494718?v=4"
-      
       alt="Varshil Nasit"
-      class="w-36 h-36 rounded-full border-2 border-white mb-6 object-cover"
+      class="hero-img"
       loading="lazy"
     />
-    <h1 class="text-6xl font-extrabold mb-4 tracking-wide allura">Varshil  Nasit</h1>
-    <p id="typing-text" class="text-2xl text-gray-300 typing max-w-xl edu-hand mt-2 mb-2"></p>
-
-    <div class="mt-8 flex justify-center gap-8">
-      <a href="https://github.com/Varshil15" target="_blank" class="hover:text-gray-300 transition">GitHub</a>
-      <a href="mailto:CodexByte15@gmail.com" class="hover:text-gray-300 transition">Email</a>
-      <a href="https://instagram.com/Varshil_nasit" target="_blank" class="hover:text-gray-300 transition">Instagram</a>
+    <h1 class="hero-title">Varshil  Nasit</h1>
+    <p id="typing-text" class="hero-typing"></p>
+    <div class="hero-socials">
+      <a href="https://github.com/Varshil15" target="_blank" class="hero-link">GitHub</a>
+      <a href="mailto:CodexByte15@gmail.com" class="hero-link">Email</a>
+      <a href="https://instagram.com/Varshil_nasit" target="_blank" class="hero-link">Instagram</a>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="max-w-4xl mx-auto px-6 py-16" data-animate>
-    <h2 class="text-4xl font-semibold mb-6 tracking-wide text-center text-white" data-animate>About Me</h2>
-    <div class="bg-gray-800 bg-opacity-60 rounded-lg px-6 py-6 shadow-lg max-w-3xl mx-auto mb-6" data-animate>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
-        <div><span class="font-semibold text-sky-400">Full Name:</span> Varshil Nasit</div>
-        <div><span class="font-semibold text-sky-400">Location:</span> Gujarat, India</div>
+  <section id="about" class="about-section" data-animate>
+    <h2 class="about-title" data-animate>About Me</h2>
+    <div class="about-card" data-animate>
+      <div class="about-grid">
+        <div><span class="about-label">Full Name:</span> Varshil Nasit</div>
+        <div><span class="about-label">Location:</span> Gujarat, India</div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
-        <div><span class="font-semibold text-sky-400">Email:</span> <a href="mailto:CodexByte15@gmail.com" class="underline hover:text-sky-300">CodexByte15@gmail.com</a></div>
-        <div><span class="font-semibold text-sky-400">GitHub:</span> <a href="https://github.com/Varshil15" target="_blank" class="underline hover:text-sky-300">Varshil15</a></div>
+      <div class="about-grid">
+        <div><span class="about-label">Email:</span> <a href="mailto:CodexByte15@gmail.com" class="about-link">CodexByte15@gmail.com</a></div>
+        <div><span class="about-label">GitHub:</span> <a href="https://github.com/Varshil15" target="_blank" class="about-link">Varshil15</a></div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-2">
-        <div><span class="font-semibold text-sky-400">Studying at:</span> PPSU</div>
-        <div><span class="font-semibold text-sky-400">Course:</span> Diploma in Computer Engineering</div>
+      <div class="about-grid">
+        <div><span class="about-label">Studying at:</span> PPSU</div>
+        <div><span class="about-label">Course:</span> Diploma in Computer Engineering</div>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div><span class="font-semibold text-sky-400">Course Duration:</span> 2024 - 2027</div>
-
-        <div><span class="font-semibold text-sky-400">Linkedin:</span> <a href="https://www.linkedin.com/in/varshil-nasit-ab910b343/"target="_blank" class="underline hover:text-sky-300">Varshil Nasit</a></div>
+      <div class="about-grid">
+        <div><span class="about-label">Course Duration:</span> 2024 - 2027</div>
+        <div><span class="about-label">Linkedin:</span> <a href="https://www.linkedin.com/in/varshil-nasit-ab910b343/"target="_blank" class="about-link">Varshil Nasit</a></div>
       </div>
     </div>
-    <p class="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed text-center" data-animate>
+    <p class="about-desc" data-animate>
       I am a passionate developer and ethical hacking learner. I love writing clean code, exploring new technologies, and continuously improving my skills. My journey is driven by curiosity and the desire to create impactful solutions.
     </p>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="max-w-5xl mx-auto px-6 py-12" data-animate>
-    <h2 class="text-4xl font-semibold mb-10 text-center tracking-wide text-white" data-animate>Projects</h2>    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <a href="https://varshil15.github.io/ToDo_List/" target="_blank" class="project-card hover:scale-105 hover:bg-gray-800 transition-transform duration-300" data-animate>
+  <section id="projects" class="projects-section" data-animate>
+    <h2 class="projects-title" data-animate>Projects</h2>
+    <div class="projects-grid">
+      <a href="https://varshil15.github.io/ToDo_List/" target="_blank" class="project-card" data-animate>
         <div class="project-card-header">
-          <h3 class="text-2xl font-semibold mb-1">ToDo List</h3>
+          <h3 class="project-title">ToDo List</h3>
           <div class="project-logo">↗</div>
         </div>
-        <p class="text-gray-400">Task manager built with JavaScript.</p>
+        <p class="project-desc">Task manager built with JavaScript.</p>
       </a>
-      
-      <a href="https://varshil15.github.io/Age_calculator/" target="_blank" class="project-card hover:scale-105 hover:bg-gray-800 transition-transform duration-300" data-animate>
+      <a href="https://varshil15.github.io/Age_calculator/" target="_blank" class="project-card" data-animate>
         <div class="project-card-header">
-          <h3 class="text-2xl font-semibold mb-1">Age Calculator</h3>
+          <h3 class="project-title">Age Calculator</h3>
           <div class="project-logo">↗</div>
         </div>
-        <p class="text-gray-400">Calculates age from DOB input.</p>
+        <p class="project-desc">Calculates age from DOB input.</p>
       </a>
-      <a href="https://varshil15.github.io/calculator/" target="_blank" class="project-card hover:scale-105 hover:bg-gray-800 transition-transform duration-300" data-animate>
+      <a href="https://varshil15.github.io/calculator/" target="_blank" class="project-card" data-animate>
         <div class="project-card-header">
-          <h3 class="text-2xl font-semibold mb-1">Calculator</h3>
+          <h3 class="project-title">Calculator</h3>
           <div class="project-logo">↗</div>
         </div>
-        <p class="text-gray-400">Basic arithmetic calculator.</p>
+        <p class="project-desc">Basic arithmetic calculator.</p>
       </a>
-      <a href="https://varshil15.github.io/Guess-the-Number/" target="_blank" class="project-card hover:scale-105 hover:bg-gray-800 transition-transform duration-300" data-animate>
+      <a href="https://varshil15.github.io/Guess-the-Number/" target="_blank" class="project-card" data-animate>
         <div class="project-card-header">
-          <h3 class="text-2xl font-semibold mb-1">Guess the Number</h3>
+          <h3 class="project-title">Guess the Number</h3>
           <div class="project-logo">↗</div>
         </div>
-        <p class="text-gray-400">Interactive number guessing game.</p>
+        <p class="project-desc">Interactive number guessing game.</p>
       </a>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="max-w-4xl mx-auto px-6 py-16 text-center" data-animate>
-    <h2 class="text-4xl font-semibold mb-6 tracking-wide text-white" data-animate>Get In Touch</h2>
-    <p class="text-gray-400 mb-6" data-animate>Feel free to reach out for collaborations or just to say hello!</p>
-    <div class="flex justify-center gap-8 text-lg" data-animate>
-      <a href="mailto:CodexByte15@gmail.com" class="hover:text-gray-300 transition">CodexByte15@gmail.com</a>
-      <a href="https://github.com/Varshil15" target="_blank" class="hover:text-gray-300 transition">GitHub</a>
-      <a href="https://instagram.com/Varshil_nasit" target="_blank" class="hover:text-gray-300 transition">Instagram</a>
+  <section id="contact" class="contact-section" data-animate>
+    <h2 class="contact-title" data-animate>Get In Touch</h2>
+    <p class="contact-desc" data-animate>Feel free to reach out for collaborations or just to say hello!</p>
+    <div class="contact-links" data-animate>
+      <a href="mailto:CodexByte15@gmail.com" class="contact-link">CodexByte15@gmail.com</a>
+      <a href="https://github.com/Varshil15" target="_blank" class="contact-link">GitHub</a>
+      <a href="https://instagram.com/Varshil_nasit" target="_blank" class="contact-link">Instagram</a>
     </div>
   </section>
 
-  <footer class="text-center text-gray-500 text-sm p-6 select-none mt-8 md:mt-0">
+  <footer class="site-footer">
     © 2025 Varshil — <span class="footer-slogan">Writing Code. Learning to Hack. Exploring Tech.</span><br>
-    <span class="block text-yellow-400 mt-2">This website is a work in progress. Some features and content are still being updated.</span>
+    <span class="footer-update">This website is a work in progress. Some features and content are still being updated.</span>
   </footer>
 
   <!-- SCRIPT FILES -->
