@@ -350,275 +350,6 @@ body.light .project-card, html.light .project-card {
   z-index: 2;
 }
 
-/* Project card header layout */
-.project-card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.5rem;
-}
-
-/* Pop-out logo styling */
-.project-logo {
-  width: 2rem;
-  height: 2rem;
-  background: rgba(56, 189, 248, 0.1);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1rem;
-  color: #38bdf8;
-  transition: all 0.3s cubic-bezier(.4,0,.2,1);
-  flex-shrink: 0;
-  margin-left: 1rem;
-}
-
-/* Pop-out effect on hover */
-.project-card:hover .project-logo {
-  transform: scale(1.2) translateY(-2px);
-  background: rgba(56, 189, 248, 0.2);
-  border-color: #38bdf8;
-  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.3);
-  color: #0ea5e9;
-}
-
-/* Light mode adjustments for project logo */
-body.light .project-logo, html.light .project-logo {
-  background: rgba(14, 165, 233, 0.1);
-  border-color: rgba(14, 165, 233, 0.3);
-  color: #0ea5e9;
-}
-
-body.light .project-card:hover .project-logo, html.light .project-card:hover .project-logo {
-  background: rgba(14, 165, 233, 0.2);
-  border-color: #0ea5e9;
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
-  color: #0284c7;
-}
-
-/* Liquid glass animated border effect for profile image */
-#hero img {
-  position: relative;
-  border: 3px solid transparent;
-  background: linear-gradient(#000, #000) padding-box,
-              linear-gradient(45deg, 
-                rgba(156, 163, 175, 0.8), 
-                rgba(107, 114, 128, 1), 
-                rgba(156, 163, 175, 0.4),
-                rgba(107, 114, 128, 0.9),
-                rgba(156, 163, 175, 0.8)
-              ) border-box;
-  animation: liquidGlassBorder 4s ease-in-out infinite;
-  box-shadow: 
-    0 0 20px rgba(156, 163, 175, 0.3),
-    inset 0 0 20px rgba(156, 163, 175, 0.1);
-  backdrop-filter: blur(1px);
-}
-
-@keyframes liquidGlassBorder {
-  0% {
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(0deg, 
-                  rgba(156, 163, 175, 0.8), 
-                  rgba(107, 114, 128, 1), 
-                  rgba(156, 163, 175, 0.4),
-                  rgba(107, 114, 128, 0.9),
-                  rgba(156, 163, 175, 0.8)
-                ) border-box;
-    box-shadow: 
-      0 0 20px rgba(156, 163, 175, 0.3),
-      inset 0 0 20px rgba(156, 163, 175, 0.1);
-  }
-  25% {
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(90deg, 
-                  rgba(107, 114, 128, 1), 
-                  rgba(156, 163, 175, 0.6),
-                  rgba(107, 114, 128, 0.8),
-                  rgba(156, 163, 175, 1),
-                  rgba(107, 114, 128, 0.7)
-                ) border-box;
-    box-shadow: 
-      0 0 30px rgba(107, 114, 128, 0.4),
-      inset 0 0 25px rgba(107, 114, 128, 0.15);
-  }
-  50% {
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(180deg, 
-                  rgba(156, 163, 175, 0.9), 
-                  rgba(107, 114, 128, 0.7),
-                  rgba(156, 163, 175, 1),
-                  rgba(107, 114, 128, 0.5),
-                  rgba(156, 163, 175, 0.8)
-                ) border-box;
-    box-shadow: 
-      0 0 25px rgba(156, 163, 175, 0.5),
-      inset 0 0 30px rgba(156, 163, 175, 0.2);
-  }
-  75% {
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(270deg, 
-                  rgba(107, 114, 128, 0.8), 
-                  rgba(156, 163, 175, 1),
-                  rgba(107, 114, 128, 0.6),
-                  rgba(156, 163, 175, 0.9),
-                  rgba(107, 114, 128, 1)
-                ) border-box;
-    box-shadow: 
-      0 0 35px rgba(107, 114, 128, 0.4),
-      inset 0 0 20px rgba(107, 114, 128, 0.12);
-  }
-  100% {
-    background: linear-gradient(#000, #000) padding-box,
-                linear-gradient(360deg, 
-                  rgba(156, 163, 175, 0.8), 
-                  rgba(107, 114, 128, 1), 
-                  rgba(156, 163, 175, 0.4),
-                  rgba(107, 114, 128, 0.9),
-                  rgba(156, 163, 175, 0.8)
-                ) border-box;
-    box-shadow: 
-      0 0 20px rgba(156, 163, 175, 0.3),
-      inset 0 0 20px rgba(156, 163, 175, 0.1);
-  }
-}
-
-/* Light mode liquid glass border effect */
-body.light #hero img, html.light #hero img {
-  background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-              linear-gradient(45deg, 
-                rgba(107, 114, 128, 0.9), 
-                rgba(75, 85, 99, 1), 
-                rgba(107, 114, 128, 0.6),
-                rgba(75, 85, 99, 0.8),
-                rgba(107, 114, 128, 0.9)
-              ) border-box;
-  animation: liquidGlassBorderLight 4s ease-in-out infinite;
-  box-shadow: 
-    0 0 20px rgba(107, 114, 128, 0.3),
-    inset 0 0 20px rgba(107, 114, 128, 0.1);
-}
-
-@keyframes liquidGlassBorderLight {
-  0% {
-    background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-                linear-gradient(0deg, 
-                  rgba(107, 114, 128, 0.9), 
-                  rgba(75, 85, 99, 1), 
-                  rgba(107, 114, 128, 0.6),
-                  rgba(75, 85, 99, 0.8),
-                  rgba(107, 114, 128, 0.9)
-                ) border-box;
-    box-shadow: 
-      0 0 20px rgba(107, 114, 128, 0.3),
-      inset 0 0 20px rgba(107, 114, 128, 0.1);
-  }
-  25% {
-    background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-                linear-gradient(90deg, 
-                  rgba(75, 85, 99, 1), 
-                  rgba(107, 114, 128, 0.7),
-                  rgba(75, 85, 99, 0.9),
-                  rgba(107, 114, 128, 1),
-                  rgba(75, 85, 99, 0.8)
-                ) border-box;
-    box-shadow: 
-      0 0 30px rgba(75, 85, 99, 0.4),
-      inset 0 0 25px rgba(75, 85, 99, 0.15);
-  }
-  50% {
-    background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-                linear-gradient(180deg, 
-                  rgba(107, 114, 128, 1), 
-                  rgba(75, 85, 99, 0.8),
-                  rgba(107, 114, 128, 0.9),
-                  rgba(75, 85, 99, 0.7),
-                  rgba(107, 114, 128, 0.9)
-                ) border-box;
-    box-shadow: 
-      0 0 25px rgba(107, 114, 128, 0.5),
-      inset 0 0 30px rgba(107, 114, 128, 0.2);
-  }
-  75% {
-    background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-                linear-gradient(270deg, 
-                  rgba(75, 85, 99, 0.9), 
-                  rgba(107, 114, 128, 1),
-                  rgba(75, 85, 99, 0.7),
-                  rgba(107, 114, 128, 0.8),
-                  rgba(75, 85, 99, 1)
-                ) border-box;
-    box-shadow: 
-      0 0 35px rgba(75, 85, 99, 0.4),
-      inset 0 0 20px rgba(75, 85, 99, 0.12);
-  }
-  100% {
-    background: linear-gradient(#f8fafc, #f8fafc) padding-box,
-                linear-gradient(360deg, 
-                  rgba(107, 114, 128, 0.9), 
-                  rgba(75, 85, 99, 1), 
-                  rgba(107, 114, 128, 0.6),
-                  rgba(75, 85, 99, 0.8),
-                  rgba(107, 114, 128, 0.9)
-                ) border-box;
-    box-shadow: 
-      0 0 20px rgba(107, 114, 128, 0.3),
-      inset 0 0 20px rgba(107, 114, 128, 0.1);
-  }
-}
-
-/* Enhanced blur and color effects for the website */
-body {
-  backdrop-filter: blur(15px);
-  position: relative;
-  overflow: auto;
-}
-
-/* Improved red and blue light effects */
-body::before,
-body::after {
-  content: '';
-  position: absolute;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  filter: blur(150px);
-  z-index: -1;
-}
-
-body::before {
-  background: radial-gradient(circle at 20% 30%, rgba(255, 140, 0, 0.55) 0, rgba(255, 140, 0, 0.32) 40%, transparent 70%),
-              radial-gradient(circle at 80% 70%, rgba(255, 230, 0, 0.55) 0, rgba(255, 230, 0, 0.32) 40%, transparent 70%);
-  top: 10%;
-  left: 5%;
-}
-
-body::after {
-  background: rgba(255, 230, 0, 0.55); /* bright mustard yellow */
-  bottom: 10%;
-  right: 5%;
-}
-
-/* Apply blur effect to major sections */
-nav, #hero, #about, #projects, #contact, footer {
-  backdrop-filter: blur(15px);
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  margin-top: 70px; /* To prevent content from hiding under fixed nav */
-}
-
-#hero {
-  /* Removed background and card styling to allow blur background to show through */
-  backdrop-filter: blur(15px);
-  border-radius: 15px;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  margin-top: 70px;
-}
-
 /* Navigation (nav-main) */
 .nav-main {
   position: fixed;
@@ -627,27 +358,23 @@ nav, #hero, #about, #projects, #contact, footer {
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 2rem;
+  justify-content: flex-start; /* Align nav content to the left */
+  padding: 0.5rem 2rem 0.5rem 0;
   z-index: 50;
   border-bottom: 1px solid rgba(55,65,81,0.3);
   box-shadow: 0 4px 24px 0 rgba(0,0,0,0.15);
   backdrop-filter: blur(16px);
   background: rgba(30, 41, 59, 0.3);
   border-radius: 0 0 1rem 1rem;
-  margin-top: 0 !important;
+  margin: 0 !important;
+  gap: 1.5rem;
 }
 .nav-brand {
-  font-size: 2rem;
-  font-weight: 800;
-  user-select: none;
-  color: var(--color-accent);
-  letter-spacing: 0.04em;
-  font-family: 'Sora', 'JetBrains Mono', monospace, sans-serif;
+  margin-left: 0;
 }
 .theme-toggle-btn {
-  margin-left: 1rem;
-  padding: 0.5rem;
+  margin-left: auto;
+  padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   outline: none;
   background: #374151;
@@ -655,6 +382,7 @@ nav, #hero, #about, #projects, #contact, footer {
   border: none;
   transition: background 0.2s;
   cursor: pointer;
+  font-size: 1.1rem;
 }
 .theme-toggle-btn:hover {
   background: #4b5563;
@@ -662,6 +390,24 @@ nav, #hero, #about, #projects, #contact, footer {
 .theme-toggle-icon {
   display: inline-block;
   vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .nav-main {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+  .nav-brand {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+  }
+  .theme-toggle-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /* Hero Section */
@@ -984,11 +730,16 @@ footer {
   .nav-main {
     flex-direction: column;
     align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0.5rem 0 0.5rem 0;
   }
   .nav-brand {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
   }
   .theme-toggle-btn {
+    margin-left: 0;
     width: 100%;
     text-align: center;
   }
