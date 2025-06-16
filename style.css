@@ -776,3 +776,49 @@ footer {
 body.light .hero-typing, html.light .hero-typing {
   color: #18181b !important;
 }
+body.light, html.light {
+  color: #18181b;
+}
+body.light .about-title,
+body.light .projects-title,
+body.light .contact-title,
+body.light .hero-title,
+body.light .nav-brand,
+body.light .project-title {
+  color: #18181b !important;
+}
+body.light .about-card,
+body.light .project-card {
+  background: #fff !important;
+  color: #18181b !important;
+  border-color: #e5e7eb !important;
+}
+body.light .about-label,
+body.light .about-link,
+body.light .project-logo {
+  color: #0ea5e9 !important;
+}
+body.light .about-link:hover,
+body.light .project-logo:hover {
+  color: #0284c7 !important;
+}
+body.light .project-desc,
+body.light .about-desc,
+body.light .contact-desc {
+  color: #444 !important;
+}
+body.light .hero-link,
+body.light .contact-link {
+  color: #0ea5e9 !important;
+}
+body.light .hero-link:hover,
+body.light .contact-link:hover {
+  color: #FFD700 !important;
+}
+body.light .site-footer {
+  color: #18181b !important;
+  background: #f1f5f9 !important;
+}
+body.light .footer-slogan {
+  color: #FFD700 !important;
+}
