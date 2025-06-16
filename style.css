@@ -370,6 +370,12 @@ body.light .project-card, html.light .project-card {
   gap: 1.5rem;
 }
 .nav-brand {
+  font-size: 2.5rem;
+  font-weight: 800;
+  user-select: none;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+  font-family: 'Sora', 'JetBrains Mono', monospace, sans-serif;
   margin-left: 0;
 }
 .theme-toggle-btn {
