@@ -17,7 +17,7 @@ function type() {
     if (index < currentText.length) {
       typingText.innerHTML += currentText.charAt(index);
       index++;
-      typingTimeout = setTimeout(type, 80);
+      typingTimeout = setTimeout(type, 40);
     } else {
       // Pause before erasing
       typingTimeout = setTimeout(() => {
