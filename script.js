@@ -36,7 +36,7 @@ function type() {
       currentTextIndex = (currentTextIndex + 1) % texts.length;
       isTyping = true;
       // Pause before typing next text
-      typingTimeout = setTimeout(type, 500);
+      typingTimeout = setTimeout(type, 1000);
     }
   }
 }
