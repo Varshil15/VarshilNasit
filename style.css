@@ -580,7 +580,7 @@ body.light .project-card, html.light .project-card {
 }
 
 .nav-brand {
-  font-size: 1.15rem;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-left: 0.25rem;
   letter-spacing: 0.04em;
@@ -1203,22 +1203,6 @@ footer {
     justify-content: center;
   }
 }
-
-/* Responsive adjustments for hero image */
-@media (max-width: 768px) {
-  .hero-img {
-    width: 10rem;
-    height: 10rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero-img {
-    width: 14rem;
-    height: 14rem;
-  }
-}
-
 body.light .hero-typing, html.light .hero-typing {
   color: #18181b !important;
 }
