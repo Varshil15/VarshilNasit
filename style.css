@@ -714,34 +714,6 @@ body.light .project-card, html.light .project-card {
   animation: pulse 3s ease-in-out infinite;
 }
 
-/* Add a cosmic light rays effect behind the hero image */
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Animated spotlight effect */
-.hero-img::before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  top: -25%;
-  left: -25%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    rgba(56, 189, 248, 0.08) 60deg,
-    transparent 120deg,
-    transparent 180deg,
-    rgba(56, 189, 248, 0.08) 240deg,
-    transparent 300deg
-  );
-  animation: rotate 15s linear infinite;
-  z-index: -1;
-  border-radius: 50%;
-}
-
 @keyframes pulse {
   0% { transform: scale(0.95); opacity: 0.5; }
   50% { transform: scale(1.05); opacity: 0.8; }
@@ -1349,32 +1321,4 @@ html {
 /* Hide scrollbar for IE/Edge */
 body {
   -ms-overflow-style: none;
-}
-
-/* Add a cosmic light rays effect behind the hero image */
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* Animated spotlight effect */
-.hero-img::before {
-  content: "";
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  top: -25%;
-  left: -25%;
-  background: conic-gradient(
-    from 0deg,
-    transparent 0deg,
-    rgba(56, 189, 248, 0.08) 60deg,
-    transparent 120deg,
-    transparent 180deg,
-    rgba(56, 189, 248, 0.08) 240deg,
-    transparent 300deg
-  );
-  animation: rotate 15s linear infinite;
-  z-index: -1;
-  border-radius: 50%;
 }
