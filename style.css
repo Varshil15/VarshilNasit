@@ -1271,20 +1271,18 @@ h2::after {
   box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
 }
 
-/* Premium scrollbar */
+/* Hide scrollbar but keep scrolling functionality */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0;
+  display: none; /* Safari and Chrome */
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(15, 15, 18, 0.5);
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #38bdf8, #0ea5e9);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #0ea5e9, #0284c7);
+/* Hide scrollbar for IE/Edge */
+body {
+  -ms-overflow-style: none;
 }
