@@ -138,3 +138,18 @@ if (heroSection) {
     document.head.appendChild(style);
   }
 })();
+
+// Add staggered animations to project cards
+document.addEventListener('DOMContentLoaded', function() {
+  // Get all project cards
+  const projectCards = document.querySelectorAll('.project-card');
+  
+  // Apply staggered animation classes to project cards
+  projectCards.forEach((card, index) => {
+    // Add a class with animation delay based on index
+    card.classList.add('animate-scale-in');
+    card.classList.add(`delay-${(index + 1) * 100}`);
+    // Make sure it's initially invisible
+    card.style.opacity = '0';
+  });
+});
