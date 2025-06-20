@@ -417,6 +417,63 @@ body.light .project-card, html.light .project-card {
   }
 }
 
+/* Responsive nav bar for mobile */
+.nav-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: transparent;
+  border-bottom: 1px solid rgba(0,0,0,0.07);
+  z-index: 100;
+  min-height: 48px;
+  box-sizing: border-box;
+}
+
+.nav-brand {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-left: 0.25rem;
+  letter-spacing: 0.04em;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.35rem;
+  cursor: pointer;
+  margin-right: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  transition: background 0.2s;
+  border-radius: 0.5rem;
+}
+
+.theme-toggle-btn:active,
+.theme-toggle-btn:focus {
+  background: rgba(0,0,0,0.06);
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .nav-main {
+    padding: 0.5rem 0.75rem;
+    min-height: 44px;
+  }
+  .nav-brand {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  .theme-toggle-btn {
+    font-size: 1.1rem;
+    margin-right: 0;
+    padding: 0.2rem 0.4rem;
+  }
+}
+
 /* Hero Section */
 .hero-section {
   min-height: 100vh;
