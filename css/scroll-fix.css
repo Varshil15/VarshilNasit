@@ -1,0 +1,7 @@
+/* Fix for page not scrolling */
+html, body, .page-content {
+  height: auto !important;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
