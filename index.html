@@ -44,25 +44,12 @@
     />    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/nav-fix.css" />
+    <!-- Devicon & FontAwesome CDN for skill icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
-    <!-- PAGE PRELOADER -->
-    <div id="preloader" class="preloader-overlay">
-      <div class="preloader-center">
-        <span class="preloader-spinner"></span>
-        <!-- <span class="preloader-percent" id="preloader-percent">0%</span> -->
-      </div>
-    </div>
-
     <div class="page-content" id="page-content">
-    <!-- LOADING SCREEN (legacy, can be removed if not needed) -->
-    <div id="loader" class="loader-overlay">
-      <div class="loader-center">
-        <span class="loader-spinner"></span>
-        <span class="loader-text">Loading Varshil Nasit Portfolio...</span>
-      </div>
-    </div>
-
     <!-- NAVIGATION -->
     <nav class="nav-main">
       <span class="nav-brand">VN.</span>
@@ -154,44 +141,114 @@
       </p>
     </section>
 
-    <!-- SKILLS GRAPH SECTION -->
-    <section id="skills" class="skills-section" data-animate>
-      <h2 class="skills-title" data-animate>Skills</h2>
-      <div class="skills-graph">
-        <div class="skill-bar" data-skill="HTML">
-          <span class="skill-label">HTML</span>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 95%"></div>
+    <!-- MY SKILLS MODERN SECTION -->
+    <section class="skills-modern-section">
+      <h2 class="skills-modern-title">My Skills</h2>
+      <div class="skills-modern-grid">
+        <!-- C -->
+        <div class="skill-modern-card neon-blue no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-c-plain colored" title="C"></i>
           </div>
-          <span class="skill-percent">95%</span>
+          <span class="skill-modern-label big-label">C</span>
         </div>
-        <div class="skill-bar" data-skill="CSS">
-          <span class="skill-label">CSS</span>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 90%"></div>
+        <!-- Java -->
+        <div class="skill-modern-card neon-orange no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-java-plain colored" title="Java"></i>
           </div>
-          <span class="skill-percent">90%</span>
+          <span class="skill-modern-label big-label">Java</span>
         </div>
-        <div class="skill-bar" data-skill="JavaScript">
-          <span class="skill-label">JavaScript</span>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 85%"></div>
+        <!-- JavaScript -->
+        <div class="skill-modern-card neon-yellow no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-javascript-plain colored" title="JavaScript"></i>
           </div>
-          <span class="skill-percent">85%</span>
+          <span class="skill-modern-label big-label">JavaScript</span>
         </div>
-        <div class="skill-bar" data-skill="Python">
-          <span class="skill-label">Python</span>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 80%"></div>
+        <!-- HTML5 -->
+        <div class="skill-modern-card neon-red no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-html5-plain colored" title="HTML5"></i>
           </div>
-          <span class="skill-percent">80%</span>
+          <span class="skill-modern-label big-label">HTML5</span>
         </div>
-        <div class="skill-bar" data-skill="Ethical Hacking">
-          <span class="skill-label">Ethical Hacking</span>
-          <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 30%"></div>
+        <!-- CSS3 -->
+        <div class="skill-modern-card neon-blue no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-css3-plain colored" title="CSS3"></i>
           </div>
-          <span class="skill-percent">30%</span>
+          <span class="skill-modern-label big-label">CSS3</span>
+        </div>
+        <!-- PHP -->
+        <div class="skill-modern-card neon-purple no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-php-plain colored" title="PHP"></i>
+          </div>
+          <span class="skill-modern-label big-label">PHP</span>
+        </div>
+        <!-- Python -->
+        <div class="skill-modern-card neon-green no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-python-plain colored" title="Python"></i>
+          </div>
+          <span class="skill-modern-label big-label">Python</span>
+        </div>
+        <!-- React -->
+        <div class="skill-modern-card neon-cyan no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-react-original colored" title="React"></i>
+          </div>
+          <span class="skill-modern-label big-label">React</span>
+        </div>
+        <!-- NodeJS -->
+        <div class="skill-modern-card neon-green no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-nodejs-plain colored" title="NodeJS"></i>
+          </div>
+          <span class="skill-modern-label big-label">NodeJS</span>
+        </div>
+        <!-- Bootstrap -->
+        <div class="skill-modern-card neon-purple no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+          </div>
+          <span class="skill-modern-label big-label">Bootstrap</span>
+        </div>
+        <!-- TailwindCSS -->
+        <div class="skill-modern-card neon-blue no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-tailwindcss-plain colored" title="TailwindCSS"></i>
+          </div>
+          <span class="skill-modern-label big-label">TailwindCSS</span>
+        </div>
+        <!-- SQLite -->
+        <div class="skill-modern-card neon-white no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-sqlite-plain colored" title="SQLite"></i>
+          </div>
+          <span class="skill-modern-label big-label">SQLite</span>
+        </div>
+        <!-- MySQL -->
+        <div class="skill-modern-card neon-blue no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-mysql-plain colored" title="MySQL"></i>
+          </div>
+          <span class="skill-modern-label big-label">MySQL</span>
+        </div>
+        <!-- MongoDB -->
+        <div class="skill-modern-card neon-green no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
+          </div>
+          <span class="skill-modern-label big-label">MongoDB</span>
+        </div>
+        <!-- Photoshop -->
+        <div class="skill-modern-card neon-blue no-bg">
+          <div class="skill-modern-icon big-icon">
+            <i class="devicon-photoshop-plain colored" title="Photoshop"></i>
+          </div>
+          <span class="skill-modern-label big-label">Photoshop</span>
         </div>
       </div>
     </section>
