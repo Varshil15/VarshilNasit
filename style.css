@@ -1257,22 +1257,13 @@ h1, h2, h3 {
   position: relative;
 }
 
-h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  height: 3px;
-  width: 60px;
-  background: var(--gold-gradient);
-  background-size: 200% 100%;
-  animation: gradient-shift 3s ease infinite;
-  border-radius: 3px;
-}
-
-.about-title::after, .projects-title::after, .contact-title::after {
-  left: 50%;
-  transform: translateX(-50%);
+/* Remove golden underline from headings */
+h2::after,
+.about-title::after,
+.projects-title::after,
+.contact-title::after {
+  display: none !important;
+  content: none !important;
 }
 
 @keyframes gradient-shift {
@@ -1326,10 +1317,10 @@ body {
 /* Skills Graph Section */
 .skills-section {
   max-width: 48rem;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 3rem auto;
   padding: 3rem 1.5rem 2rem 1.5rem;
   background: var(--glass-bg);
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   box-shadow: var(--premium-shadow);
   border: var(--premium-border);
   backdrop-filter: blur(8px);
@@ -1345,93 +1336,75 @@ body {
   letter-spacing: 0.04em;
   position: relative;
 }
-.skills-title::after {
-  content: '';
-  position: absolute;
-  width: 60px;
-  height: 3px;
-  background: var(--gold-gradient);
-  left: 50%;
-  bottom: -10px;
-  transform: translateX(-50%);
-  border-radius: 2px;
-  background-size: 200% 100%;
-  animation: gradient-shift 3s ease infinite;
+body.light .skills-title {
+  color: #18181b;
 }
-.skills-list {
+.skills-graph {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .skill-bar {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
+  width: 100%;
 }
 .skill-label {
-  flex: 0 0 120px;
+  min-width: 110px;
   font-weight: 600;
   color: var(--color-accent);
   font-size: 1.1rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
 }
 .skill-bar-bg {
   flex: 1;
   height: 18px;
-  background: rgba(56, 189, 248, 0.08);
-  border-radius: 10px;
+  background: rgba(56, 189, 248, 0.10);
+  border-radius: 12px;
   overflow: hidden;
   position: relative;
+  border: 1px solid rgba(56, 189, 248, 0.15);
 }
 .skill-bar-fill {
   height: 100%;
   width: 0%;
   background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(56,189,248,0.15);
   transition: width 1.2s cubic-bezier(.4,0,.2,1);
   position: relative;
+  z-index: 1;
+}
+.skill-bar-fill.skills-animated {
+  /* The width will be set inline by JS */
 }
 .skill-percent {
-  min-width: 38px;
+  min-width: 48px;
   text-align: right;
-  font-size: 1rem;
+  font-weight: 600;
   color: #fff;
-  font-weight: 500;
-  margin-left: 0.75rem;
-}
-
-/* Light mode for skills section */
-body.light .skills-section {
-  background: #fff !important;
-  color: #18181b !important;
-  border-color: #e5e7eb !important;
-}
-body.light .skills-title {
-  color: #18181b !important;
-}
-body.light .skill-label {
-  color: #0ea5e9 !important;
-}
-body.light .skill-bar-bg {
-  background: #e0e7ef !important;
-}
-body.light .skill-bar-fill {
-  background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+  font-size: 1.1rem;
 }
 body.light .skill-percent {
-  color: #18181b !important;
+  color: #18181b;
 }
 
 @media (max-width: 600px) {
   .skills-section {
     padding: 2rem 0.5rem 1.5rem 0.5rem;
-  }
-  .skill-label {
-    flex: 0 0 80px;
-    font-size: 1rem;
+    border-radius: 1rem;
   }
   .skills-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .skill-label {
+    min-width: 70px;
+    font-size: 1rem;
+  }
+  .skill-percent {
+    min-width: 36px;
+    font-size: 1rem;
   }
 }
