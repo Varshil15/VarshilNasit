@@ -1322,3 +1322,116 @@ html {
 body {
   -ms-overflow-style: none;
 }
+
+/* Skills Graph Section */
+.skills-section {
+  max-width: 48rem;
+  margin: 0 auto 4rem auto;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  background: var(--glass-bg);
+  border-radius: 1.25rem;
+  box-shadow: var(--premium-shadow);
+  border: var(--premium-border);
+  backdrop-filter: blur(8px);
+  position: relative;
+  overflow: hidden;
+}
+.skills-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #fff;
+  letter-spacing: 0.04em;
+  position: relative;
+}
+.skills-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background: var(--gold-gradient);
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  background-size: 200% 100%;
+  animation: gradient-shift 3s ease infinite;
+}
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.skill-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.skill-label {
+  flex: 0 0 120px;
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+.skill-bar-bg {
+  flex: 1;
+  height: 18px;
+  background: rgba(56, 189, 248, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.skill-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #38bdf8 0%, #0ea5e9 100%);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.15);
+  transition: width 1.2s cubic-bezier(.4,0,.2,1);
+  position: relative;
+}
+.skill-percent {
+  min-width: 38px;
+  text-align: right;
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 0.75rem;
+}
+
+/* Light mode for skills section */
+body.light .skills-section {
+  background: #fff !important;
+  color: #18181b !important;
+  border-color: #e5e7eb !important;
+}
+body.light .skills-title {
+  color: #18181b !important;
+}
+body.light .skill-label {
+  color: #0ea5e9 !important;
+}
+body.light .skill-bar-bg {
+  background: #e0e7ef !important;
+}
+body.light .skill-bar-fill {
+  background: linear-gradient(90deg, #0ea5e9 0%, #38bdf8 100%) !important;
+}
+body.light .skill-percent {
+  color: #18181b !important;
+}
+
+@media (max-width: 600px) {
+  .skills-section {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .skill-label {
+    flex: 0 0 80px;
+    font-size: 1rem;
+  }
+  .skills-title {
+    font-size: 1.3rem;
+  }
+}

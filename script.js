@@ -153,3 +153,35 @@ document.addEventListener('DOMContentLoaded', function() {
     card.style.opacity = '0';
   });
 });
+
+// Animate skills graph bars on scroll into view
+function animateSkillsGraph() {
+  const skillsSection = document.querySelector('.skills-section');
+  if (!skillsSection) return;
+  const skillBars = document.querySelectorAll('.skill-bar-fill');
+  let animated = false;
+
+  function handleScroll() {
+    const rect = skillsSection.getBoundingClientRect();
+    if (!animated && rect.top < window.innerHeight * 0.85) {
+      skillBars.forEach(bar => {
+        const level = bar.style.getPropertyValue('--skill-level') || '0%';
+        bar.style.width = level;
+        bar.classList.add('skills-animated');
+      });
+      animated = true;
+      window.removeEventListener('scroll', handleScroll);
+    }
+  }
+
+  // Set initial width to 0 for animation
+  skillBars.forEach(bar => {
+    bar.style.width = '0%';
+  });
+
+  window.addEventListener('scroll', handleScroll);
+  // Also trigger on load in case already in view
+  handleScroll();
+}
+
+window.addEventListener('DOMContentLoaded', animateSkillsGraph);
