@@ -185,3 +185,25 @@ function animateSkillsGraph() {
 }
 
 window.addEventListener('DOMContentLoaded', animateSkillsGraph);
+
+// PAGE PRELOADER SCRIPT (fix: always remove overlay after fade)
+(function() {
+  const preloader = document.getElementById('preloader');
+  const pageContent = document.getElementById('page-content');
+  if (preloader && pageContent) {
+    // Add blur/dim while loading
+    pageContent.classList.add('preloader-blur');
+    window.addEventListener('load', function() {
+      // Fade out preloader overlay
+      preloader.classList.add('preloader-fade');
+      // Remove blur/dim from content
+      pageContent.classList.remove('preloader-blur');
+      // Always remove preloader from DOM after fade (even if fade event missed)
+      setTimeout(function() {
+        if (preloader && preloader.parentNode) {
+          preloader.parentNode.removeChild(preloader);
+        }
+      }, 700); // Should match CSS fade duration
+    });
+  }
+})();

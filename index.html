@@ -46,7 +46,16 @@
     <link rel="stylesheet" href="css/nav-fix.css" />
   </head>
   <body>
-    <!-- LOADING SCREEN -->
+    <!-- PAGE PRELOADER -->
+    <div id="preloader" class="preloader-overlay">
+      <div class="preloader-center">
+        <span class="preloader-spinner"></span>
+        <!-- <span class="preloader-percent" id="preloader-percent">0%</span> -->
+      </div>
+    </div>
+
+    <div class="page-content" id="page-content">
+    <!-- LOADING SCREEN (legacy, can be removed if not needed) -->
     <div id="loader" class="loader-overlay">
       <div class="loader-center">
         <span class="loader-spinner"></span>
@@ -180,9 +189,9 @@
         <div class="skill-bar" data-skill="Ethical Hacking">
           <span class="skill-label">Ethical Hacking</span>
           <div class="skill-bar-bg">
-            <div class="skill-bar-fill" style="--skill-level: 70%"></div>
+            <div class="skill-bar-fill" style="--skill-level: 30%"></div>
           </div>
-          <span class="skill-percent">70%</span>
+          <span class="skill-percent">30%</span>
         </div>
       </div>
     </section>
@@ -299,5 +308,6 @@
         }
       });
     </script>
+    </div> <!-- END .page-content -->
   </body>
 </html>
