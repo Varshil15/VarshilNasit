@@ -2233,3 +2233,28 @@ body,
     padding: 0.8rem 1rem;
   }
 }
+
+/* Dim all glows and neon effects */
+.skill-modern-card,
+.neon-blue,
+.neon-orange,
+.neon-yellow,
+.neon-red,
+.neon-purple,
+.neon-green,
+.neon-cyan,
+.neon-white {
+  box-shadow: 0 0 12px 2px rgba(0, 255, 255, 0.10),
+    0 0 24px 4px rgba(0, 255, 255, 0.07),
+    0 0 0px 0px rgba(0,0,0,0.02);
+}
+
+/* Dim text glows */
+.big-label, .skill-modern-label, .footer-slogan, .footer-update {
+  text-shadow: 0 0 6px rgba(0,255,255,0.10), 0 0 12px rgba(0,255,255,0.07);
+}
+
+/* Dim about section shadow (if not already present) */
+.about-section {
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.07);
+}
