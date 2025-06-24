@@ -24,9 +24,9 @@
 .about-card {
   background: rgba(30, 41, 59, 0.7);
   border-radius: 1.5rem;
-  box-shadow: 0 8px 32px 0 rgba(56, 189, 248, 0.25), 0 0 24px #38bdf8;
+  box-shadow: 0 8px 32px 0 rgba(56, 189, 248, 0.25), 0 0 15px #38bdf8;
   border: 2px solid rgba(56, 189, 248, 0.3);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(6px);
   padding: 2.5rem 2rem;
   margin-bottom: 2rem;
   max-width: 600px;
