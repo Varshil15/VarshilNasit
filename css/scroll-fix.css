@@ -11,6 +11,8 @@
 .about-title {
   font-size: 2.5rem;
   font-family: 'Sora', 'JetBrains Mono', monospace, sans-serif;
+
+  
   color: #38bdf8;
   text-shadow: 0 0 12px #38bdf8, 0 0 32px #38bdf8;
   margin-bottom: 2rem;
