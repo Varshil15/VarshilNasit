@@ -1610,6 +1610,7 @@ body.light .skill-percent {
   text-align: center;
   margin-bottom: 2.5rem;
   letter-spacing: 0.04em;
+  text-shadow: 0 0 4px rgba(56, 189, 248, 0.3); /* Dimmed from previous bright glow */
 }
 .skills-modern-grid {
   display: grid;
