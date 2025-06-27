@@ -899,7 +899,7 @@ html.light .project-card {
     transform 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-link:hover {
-  color: #ffd700;
+  color: #4266a9;
   text-shadow: 0 2px 8px rgba(255, 215, 0, 0.18);
   transform: scale(1.12);
 }
