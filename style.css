@@ -1670,6 +1670,7 @@ body.light .skill-percent {
 }
 .skill-modern-card:hover .skill-modern-icon {
   filter: drop-shadow(0 0 12px var(--neon-glow, #38bdf8));
+  
   transform: scale(1.13);
 }
 
