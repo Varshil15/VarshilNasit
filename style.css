@@ -1049,6 +1049,8 @@ html.light .project-card {
   backdrop-filter: blur(10px);
   position: relative;
   overflow: hidden;
+
+  
 }
 .about-card::before {
   content: "";
