@@ -2495,6 +2495,8 @@ h2::after,
 .about-title::after,
 .projects-title::after,
 .contact-title::after {
+
+  
   display: none !important;
   content: none !important;
 }
