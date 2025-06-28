@@ -1028,7 +1028,7 @@ html.light .project-card {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.3s ease;
-  box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+  box-shadow: 0 0 4px rgba(56, 189, 248, 0.5);
 }
 
 .about-link:hover {
