@@ -1,7 +1,10 @@
 // Text typing effect for the subtitle
 const texts = [
   "Writing Code. Learning to Hack. Exploring Tech.",
-  "Creating. Cracking. Continuously Improving."
+  "No Sleep. Just Code.",
+  "Creating. Cracking. Continuously Improving.",
+  "Breaking Barriers. Building Future.",
+
 ];
 const typingText = document.getElementById("typing-text");
 let currentTextIndex = 0;
