@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
         entry.target.classList.remove('fade-in-up');
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.18 });
   animatedEls.forEach(el => observer.observe(el));
 });
