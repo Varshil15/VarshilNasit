@@ -64,7 +64,7 @@
 .about-link {
   color: #fff;
   text-decoration: underline;
-  transition: color 0.1s;
+  transition: color 0.2s;
 }
 .about-link:hover {
   color: #38bdf8;
