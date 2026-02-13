@@ -118,6 +118,22 @@ a:hover,
   font-weight: 700;
   font-size: 1.5rem;
   background: var(--gold-gradient);
+}
+
+/* Center footer block */
+.site-footer {
+  text-align: center;
+  margin: 2rem auto 0 auto;
+  padding: 1.5rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(40, 40, 50, 0.25);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px 0 rgba(56, 189, 248, 0.08);
+}
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
